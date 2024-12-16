@@ -1,8 +1,17 @@
+/* Style général */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
 @font-face {
-    font-family: 'fibel'; /* Nom de la police */
+    font-family: 'Fibel'; /* Nom de la police */
     src: url('fonts/fibel.ttf') format('truetype'); /* Chemin vers le fichier de police */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fibel_2'; /* Nom de la police */
+    src: url('fonts/Fibel_2.ttf') format('truetype'); /* Chemin vers le fichier de police */
     font-weight: normal;
     font-style: normal;
 }
@@ -11,13 +20,6 @@
     font-family: 'Minecraft';
     src: /*url('fonts/minecraft.ttf') format('truetype'),*/
         url('fonts/minecraft.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'fibel_2'; /* Nom de la police */
-    src: url('fonts/Fibel_2.ttf') format('truetype'); /* Chemin vers le fichier de police */
     font-weight: normal;
     font-style: normal;
 }
