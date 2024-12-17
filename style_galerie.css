@@ -217,3 +217,24 @@ main {
     font-size: 30px;
     cursor: pointer;
         }
+
+        @media (max-width: 850px) {
+
+            /* Header */
+            header .logo {
+                font-size: 0.6rem; /* Réduit la taille du logo */
+            }
+        
+            .nav-link {
+                font-size: 0.6rem; /* Réduit la taille des liens */
+            }
+        
+            .page-header {
+                font-size: 0.9rem; /* Réduit globalement la taille de la section */
+                text-align: center; /* Centre les éléments dans le header */
+            }
+
+            footer p {
+                font-size: 0.6rem;
+            }
+        }
