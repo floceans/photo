@@ -137,6 +137,7 @@ main {
     color: #ff6f61;
 }
 
+/* Container for the grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -144,6 +145,18 @@ main {
     padding: 10px;
 }
 
+.photo.landscape img {
+    width: 100%; /* Pour garder les proportions */
+    transform: scale(0.6); /* Réduction de la taille en hauteur */
+}
+
+/* Ajuster pour éviter que les colonnes ne soient trop grandes avec les images landscape */
+.photo.landscape {
+    max-width: 50%; /* Limiter la largeur des colonnes pour ne pas dépasser */
+    transform: scale(2);
+}
+
+/* Style for the photo */
 .photo {
     position: relative;
     overflow: hidden;
@@ -152,6 +165,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Style for the image */
 .photo img {
     width: 100%;
     height: auto;
@@ -161,20 +175,20 @@ main {
     transition: transform 0.3s ease;
 }
 
+
 .photo:hover img {
     transform: scale(1.1);
 }
+
 
 .photo:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-
-photo img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+.photo.landscape:hover {
+    transform: scale(1.2); /* Conserve le même effet pour les images landscape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Moins prononcé pour éviter le sur-dimensionnement */
 }
 
         /* Style de la modale */
@@ -202,4 +216,4 @@ photo img {
     color: white;
     font-size: 30px;
     cursor: pointer;
-}
+        }
